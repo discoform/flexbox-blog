@@ -1,0 +1,21 @@
+.sticky-note-footer {
+    margin-top: $base-spacing * 2;
+    padding: $base-spacing;
+    padding: ($base-spacing / 2) $base-spacing;
+    background: $color-3a;
+
+    @include breakpoint(medium) {
+        position: fixed;
+        bottom: 0;
+        box-shadow: 0px 0px 2px $grey;
+        width: 100%;
+        left: 0;
+        right: 0;
+
+        p, a {
+            display: inline;
+            font-size: 14px;
+            font-style: italic;
+        }
+    }
+}

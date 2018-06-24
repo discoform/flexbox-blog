@@ -1,0 +1,118 @@
+$body: "Open Sans", sans-serif;
+$headings: "Roboto", monospace;
+
+body {
+    font-family: $body, -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+}
+
+/*! Typebase.less v0.1.0 | MIT License */
+/* Setup */
+// html {
+//     /* Change default typefaces here
+// }
+
+/* Paragraphs and Links */
+p, a {
+    font-size: 17px;
+    line-height: 1.25;
+
+  
+   
+}
+
+/*  Links Within Paragraphs*/
+
+p a {
+    color: inherit;
+    box-shadow: inset 0px -5px 0px $color-4;
+
+    &:hover {
+        color: $white;
+        box-shadow: inset 0px -100px 10px $color-4;
+        transition: all ease 0.3s;
+    }
+}
+
+ul,
+ol {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+ul li,
+ol li {
+    line-height: 1.5rem;
+}
+
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+blockquote {
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* Change heading typefaces here */
+    font-family: $headings, -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+    margin-top: 1.5rem;
+    margin-bottom: 20px;
+    line-height: 1.5rem;
+}
+
+h1 {
+    font-size: 4.242rem;
+    line-height: 4.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.828rem;
+    line-height: 3rem;
+}
+
+h3 {
+    font-size: 1.414rem;
+}
+
+h4 {
+    font-size: 0.707rem;
+}
+
+h5 {
+    font-size: 0.4713333333333333rem;
+}
+
+h6 {
+    font-size: 0.3535rem;
+}
+
+/* Tables */
+table {
+    margin-top: 1.5rem;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+table td,
+table th {
+    padding: 0;
+    line-height: 33px;
+}
+
+/* Code blocks */
+code {
+    vertical-align: bottom;
+}

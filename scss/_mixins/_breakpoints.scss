@@ -1,0 +1,69 @@
+//////////////////
+// breakpoints //
+////////////////
+
+///////////////The Media Query Mixin//////////////////
+
+@mixin breakpoint($breakpoint) {
+    // Get the width from the keyword `$breakpoint`
+    // Or `null` if the keyword doesn't exist in `$breakpoints` map
+    $value: map-get($breakpoints, $breakpoint);
+
+    // If `$breakpoint` exists as a key in `$breakpoints`
+    @if $value != null {
+        // Update `$current-breakpoint`
+        $current-breakpoint: $breakpoint !global;
+
+        // Open a media query block
+        @media (min-width: $value) {
+            // Let the user dump content
+            @content;
+        }
+
+        // Then reset `$current-breakpoint` to `$default-breakpoint` (root)
+        $current-breakpoint: $default-breakpoint !global;
+    }
+    @else {
+        @warn "Invalid breakpoint `#{$breakpoint}`.";
+    }
+}
+
+///////////////The Mixin to Generate the Placeholder//////////////////
+
+@mixin placeholder($name) {
+    // If placeholder doesn't exist yet in `$placeholders` list
+    @if not index($placeholders, $name) {
+        // Store its name
+        $placeholders: append($placeholders, $name) !global;
+
+        // At root level
+        @at-root {
+            // Looping through `$breakpoints`
+            @each $breakpoint, $value in $breakpoints {
+                // Opening a media query block
+                @media (min-width: $value) {
+                    // Generating a placeholder
+                    // Called $name-$breakpoint
+                    %#{$name}-#{$breakpoint} {
+                        @content;
+                    }
+                }
+            }
+
+            // And dumping a placeholder out of any media query as well
+            // so basically at root level
+            %#{$name}-#{$default-breakpoint} {
+                @content;
+            }
+        }
+    }
+    @else {
+        @warn "Placeholder `#{$name}` already exists.";
+    }
+}
+
+///////////////Extending the Placeholder//////////////////
+
+@mixin _($name) {
+    @extend %#{$name}-#{$current-breakpoint} !optional;
+}

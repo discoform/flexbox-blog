@@ -1,0 +1,136 @@
+.cards {
+    padding: 15px;
+    display: flex;
+}
+
+.card {
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    margin-top: $base-spacing;
+
+    @include breakpoint(medium) {
+        margin-top: $base-spacing * 2;
+    }
+
+
+    &:hover {
+        .card__inner {
+            background-color: $color-1;
+        }
+    }
+
+    &__inner {
+        padding: $base-spacing;
+        position: relative;
+        cursor: pointer;
+        background-color: $color-1;
+        color: $white;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        text-align: center;
+        transition: all 0.2s ease-in-out;
+
+        &:after {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .fa {
+            width: 100%;
+            margin: ($base-spacing / 4) auto ($base-spacing / 4);
+        }
+    }
+
+    &__expander {
+        transition: all 0.2s ease-in-out;
+        position: relative;
+        text-transform: uppercase;
+        font-size: 1.5em;
+
+        .fa {
+            font-size: 0.75em;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+    }
+
+    &.is-collapsed {
+        margin-bottom: $base-spacing / 2;
+
+        .card__inner {
+            &:after {
+                content: "";
+                opacity: 0;
+            }
+        }
+
+        .card__expander {
+            max-height: 0;
+            min-height: 0;
+            overflow: hidden;
+            margin-top: 0;
+            opacity: 0;
+        }
+    }
+
+    &.is-expanded {
+        .card__inner {
+            background-color: $color-1;
+            height: 0;
+            padding: 0;
+
+            &:after {
+                content: "[ Close]";
+                font-size: 14px;
+                opacity: 1;
+                color: $grey;
+                display: block;
+                position: absolute;
+                bottom: 0;
+                text-align: center;
+            }
+
+            &:before {
+                content: "⊗";
+                font-size: 34px;
+                opacity: 1;
+                color: $grey;
+                display: block;
+                position: absolute;
+                bottom: -10px;
+                right: 0;
+                text-align: center;
+            }
+        }
+
+        .card__expander {
+            overflow: visible;
+            opacity: 1;
+        }
+
+        &:hover {
+            .card__inner {
+                transform: scale(1);
+            }
+        }
+    }
+
+    &.is-inactive {
+        .card__inner {
+            pointer-events: none;
+            opacity: 0.5;
+        }
+
+        &:hover {
+            .card__inner {
+                background-color: $color-1;
+                transform: scale(1);
+            }
+        }
+    }
+}

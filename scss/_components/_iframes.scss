@@ -1,0 +1,10 @@
+iframe {
+    width: 100%;
+    min-height: 300px;
+    padding: $base-spacing 0 ($base-spacing / 6);
+
+    @include breakpoint(small) {
+        min-height: 450px;
+        padding: $base-spacing 0 ($base-spacing / 2);
+    }
+}

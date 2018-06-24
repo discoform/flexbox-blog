@@ -1,0 +1,22 @@
+%button {
+    padding: $base-spacing ($base-spacing * 2);
+    border: 1px solid $grey;
+    color: $color-1;
+    font-size: 14px;
+
+    &:hover {
+        box-shadow: $shadow;
+        font-size: 14.25px;
+        transition: all ease 0.1s;
+    }
+
+    &:active {
+        font-size: 14px;
+        box-shadow: inset $shadow;
+        background: $greya;
+    }
+}
+
+.button {
+    @extend %button;
+}

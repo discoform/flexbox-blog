@@ -1,0 +1,14 @@
+//////////////////
+// Colors ///////
+////////////////
+
+
+
+//////////////////
+// breakpoints //
+////////////////
+$breakpoints: ("mobile": 320px, "small": 500px, "medium": 800px, "large": 1200px);
+
+$default-breakpoint: root;
+$current-breakpoint: $default-breakpoint;
+$placeholders: ();

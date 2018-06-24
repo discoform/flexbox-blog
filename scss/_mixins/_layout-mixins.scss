@@ -1,0 +1,15 @@
+@import "breakpoints";
+
+@mixin max-width-flex {
+    max-width: $max-width;
+    margin: $base-spacing ($base-spacing / 2);
+
+    @include breakpoint(medium) {
+        display: flex;
+        margin: $base-spacing auto;
+    }
+
+
+  
+}
+

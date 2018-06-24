@@ -1,0 +1,24 @@
+header {
+    display: flex;
+    max-width: 100%;
+    border-bottom: 1px solid $grey;
+
+
+    .the-content {
+        flex: 1;
+        margin: auto;
+        padding: $base-spacing/2;
+
+        @include breakpoint(small) {
+            text-align: center;
+            margin-top: $base-spacing / 2;
+        }
+
+
+        @include breakpoint(large) {
+            padding-top: $base-spacing;
+            padding-bottom: $base-spacing * 4;
+            margin-top: $base-spacing * 4;
+        }
+    }
+}
