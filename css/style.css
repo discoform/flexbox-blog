@@ -1,87 +1,229 @@
 @charset "UTF-8";
-/* http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain) */
-/* line 6, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_base/_reset.scss */ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; cursor: default; }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  cursor: default;
+}
 
-/* line 28, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_base/_reset.scss */ a { cursor: pointer; }
+a {
+  cursor: pointer;
+}
 
 /* HTML5 display-role reset for older browsers */
-/* line 33, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_base/_reset.scss */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
 
-/* line 38, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_base/_reset.scss */ body { line-height: 1; }
+body {
+  line-height: 1;
+}
 
-/* line 42, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_base/_reset.scss */ ol, ul { list-style: none; }
+ol, ul {
+  list-style: none;
+}
 
-/* line 45, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_base/_reset.scss */ ol li, ul li { list-style-position: inside; }
+ol li, ul li {
+  list-style-position: inside;
+}
 
-/* line 50, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_base/_reset.scss */ blockquote, q { quotes: none; }
+blockquote, q {
+  quotes: none;
+}
 
-/* line 54, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_base/_reset.scss */ blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
 
-/* line 60, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_base/_reset.scss */ table { border-collapse: collapse; border-spacing: 0; }
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
-/* line 1, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_extends/_extends.scss */ .button { padding: 30px 60px; border: 1px solid #dfdfdf; color: #003c5d; font-size: 14px; }
+.button {
+  padding: 30px 60px;
+  border: 1px solid #dfdfdf;
+  color: #003c5d;
+  font-size: 14px;
+}
 
-/* line 7, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_extends/_extends.scss */ .button:hover { box-shadow: 0px 0px 2px #dfdfdf; font-size: 14.25px; transition: all ease 0.1s; }
+.button:hover {
+  -webkit-box-shadow: 0px 0px 2px #dfdfdf;
+          box-shadow: 0px 0px 2px #dfdfdf;
+  font-size: 14.25px;
+  -webkit-transition: all ease 0.1s;
+  transition: all ease 0.1s;
+}
 
-/* line 13, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_extends/_extends.scss */ .button:active { font-size: 14px; box-shadow: inset 0px 0px 2px #dfdfdf; background: rgba(223, 223, 223, 0.7); }
+.button:active {
+  font-size: 14px;
+  -webkit-box-shadow: inset 0px 0px 2px #dfdfdf;
+          box-shadow: inset 0px 0px 2px #dfdfdf;
+  background: rgba(223, 223, 223, 0.7);
+}
 
-/* line 4, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_typography/_typography-main.scss */ body { font-family: "Open Sans", sans-serif, -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif; }
+body {
+  font-family: "Open Sans", sans-serif, -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+}
 
 /*! Typebase.less v0.1.0 | MIT License */
 /* Setup */
 /* Paragraphs and Links */
-/* line 15, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_typography/_typography-main.scss */ p, a { font-size: 17px; line-height: 1.25; }
+p, a {
+  font-size: 17px;
+  line-height: 1.25;
+}
 
 /*  Links Within Paragraphs*/
-/* line 25, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_typography/_typography-main.scss */ p a { color: inherit; box-shadow: inset 0px -5px 0px #9acd91; }
+p a {
+  color: inherit;
+  -webkit-box-shadow: inset 0px -5px 0px #9acd91;
+          box-shadow: inset 0px -5px 0px #9acd91;
+}
 
-/* line 29, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_typography/_typography-main.scss */ p a:hover { color: white; box-shadow: inset 0px -100px 10px #9acd91; transition: all ease 0.3s; }
+p a:hover {
+  color: white;
+  -webkit-box-shadow: inset 0px -100px 10px #9acd91;
+          box-shadow: inset 0px -100px 10px #9acd91;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
 
-/* line 36, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_typography/_typography-main.scss */ ul, ol { margin-top: 1.5rem; margin-bottom: 1.5rem; }
+ul,
+ol {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
 
-/* line 42, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_typography/_typography-main.scss */ ul li, ol li { line-height: 1.5rem; }
+ul li,
+ol li {
+  line-height: 1.5rem;
+}
 
-/* line 47, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_typography/_typography-main.scss */ ul ul, ol ul, ul ol, ol ol { margin-top: 0; margin-bottom: 0; }
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
-/* line 55, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_typography/_typography-main.scss */ blockquote { line-height: 1.5rem; margin-top: 1.5rem; margin-bottom: 1.5rem; }
+blockquote {
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
 
 /* Headings */
-/* line 62, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_typography/_typography-main.scss */ h1, h2, h3, h4, h5, h6 { /* Change heading typefaces here */ font-family: "Roboto", monospace, -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif; margin-top: 1.5rem; margin-bottom: 20px; line-height: 1.5rem; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Change heading typefaces here */
+  font-family: "Roboto", monospace, -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  margin-top: 1.5rem;
+  margin-bottom: 20px;
+  line-height: 1.5rem;
+}
 
-/* line 75, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_typography/_typography-main.scss */ h1 { font-size: 4.242rem; line-height: 4.5rem; font-weight: 700; }
+h1 {
+  font-size: 4.242rem;
+  line-height: 4.5rem;
+  font-weight: 700;
+}
 
-/* line 81, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_typography/_typography-main.scss */ h2 { font-size: 1.828rem; line-height: 3rem; }
+h2 {
+  font-size: 1.828rem;
+  line-height: 3rem;
+}
 
-/* line 86, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_typography/_typography-main.scss */ h3 { font-size: 1.414rem; }
+h3 {
+  font-size: 1.414rem;
+}
 
-/* line 90, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_typography/_typography-main.scss */ h4 { font-size: 0.707rem; }
+h4 {
+  font-size: 0.707rem;
+}
 
-/* line 94, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_typography/_typography-main.scss */ h5 { font-size: 0.4713333333333333rem; }
+h5 {
+  font-size: 0.4713333333333333rem;
+}
 
-/* line 98, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_typography/_typography-main.scss */ h6 { font-size: 0.3535rem; }
+h6 {
+  font-size: 0.3535rem;
+}
 
 /* Tables */
-/* line 103, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_typography/_typography-main.scss */ table { margin-top: 1.5rem; border-spacing: 0px; border-collapse: collapse; }
+table {
+  margin-top: 1.5rem;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
 
-/* line 109, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_typography/_typography-main.scss */ table td, table th { padding: 0; line-height: 33px; }
+table td,
+table th {
+  padding: 0;
+  line-height: 33px;
+}
 
 /* Code blocks */
-/* line 116, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_typography/_typography-main.scss */ code { vertical-align: bottom; }
+code {
+  vertical-align: bottom;
+}
 
 /* -------------------------------- 
 
 Compiled CSS From https://github.com/CodyHouse/stretchy-navigation/blob/master/css/style.css
 
 -------------------------------- */
-/* line 25, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ *, *::after, *::before { box-sizing: border-box; }
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
-/* line 29, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ html { font-size: 72.5%; }
+html {
+  font-size: 72.5%;
+}
 
-/* line 33, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ body { font-size: 1.6rem; font-family: "Source Sans Pro", sans-serif; color: #003c5d; background-color: #ffffff; }
+body {
+  font-size: 1.6rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #003c5d;
+  background-color: #ffffff;
+}
 
-/* line 40, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ a { color: #9acd91; text-decoration: none; }
+a {
+  color: #9acd91;
+  text-decoration: none;
+}
 
-/* line 45, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ img { max-width: 100%; }
+img {
+  max-width: 100%;
+}
 
 /* -------------------------------- 
 
@@ -91,455 +233,1370 @@ Stretchy Nav style - common to:
  - edit-content navigation
 
 -------------------------------- */
-/* line 57, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav { position: fixed; z-index: 2; top: 40px; right: 5%; pointer-events: none; }
+.cd-stretchy-nav {
+  position: fixed;
+  z-index: 2;
+  top: 40px;
+  right: 5%;
+  pointer-events: none;
+}
 
-/* line 65, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav .stretchy-nav-bg { /* this is the stretching navigation background */ position: absolute; z-index: 1; top: 0; right: 0; width: 60px; height: 60px; border-radius: 30px; background: #9acd91; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); -webkit-transition: height 0.2s, box-shadow 0.2s; -moz-transition: height 0.2s, box-shadow 0.2s; transition: height 0.2s, box-shadow 0.2s; }
+.cd-stretchy-nav .stretchy-nav-bg {
+  /* this is the stretching navigation background */
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background: #9acd91;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -webkit-transition: height 0.2s, box-shadow 0.2s;
+  -webkit-transition: height 0.2s, -webkit-box-shadow 0.2s;
+  transition: height 0.2s, -webkit-box-shadow 0.2s;
+  transition: height 0.2s, box-shadow 0.2s;
+  transition: height 0.2s, box-shadow 0.2s, -webkit-box-shadow 0.2s;
+}
 
-/* line 81, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.nav-is-visible { pointer-events: auto; }
+.cd-stretchy-nav.nav-is-visible {
+  pointer-events: auto;
+}
 
-/* line 85, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.nav-is-visible .stretchy-nav-bg { height: 100%; box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); }
+.cd-stretchy-nav.nav-is-visible .stretchy-nav-bg {
+  height: 100%;
+  -webkit-box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
 
-/* line 90, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-nav-trigger { position: absolute; z-index: 3; top: 0; right: 0; height: 60px; width: 60px; border-radius: 50%; /* replace text with image */ overflow: hidden; white-space: nowrap; color: transparent; pointer-events: auto; }
+.cd-nav-trigger {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  /* replace text with image */
+  overflow: hidden;
+  white-space: nowrap;
+  color: transparent;
+  pointer-events: auto;
+}
 
-/* line 106, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-nav-trigger span, .cd-nav-trigger span::after, .cd-nav-trigger span::before { /* this is the hamburger icon */ position: absolute; width: 16px; height: 2px; background-color: #ffffff; }
+.cd-nav-trigger span, .cd-nav-trigger span::after, .cd-nav-trigger span::before {
+  /* this is the hamburger icon */
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: #ffffff;
+}
 
-/* line 114, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-nav-trigger span { /* middle line of the hamburger icon */ left: 50%; top: 50%; bottom: auto; right: auto; -webkit-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); -webkit-transition: background-color 0.2s; -moz-transition: background-color 0.2s; transition: background-color 0.2s; }
+.cd-nav-trigger span {
+  /* middle line of the hamburger icon */
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
 
-/* line 130, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-nav-trigger span::after, .cd-nav-trigger span::before { /* top and bottom lines of the hamburger icon */ content: ''; top: 0; left: 0; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transition: -webkit-transform 0.2s; -moz-transition: -moz-transform 0.2s; transition: transform 0.2s; }
+.cd-nav-trigger span::after, .cd-nav-trigger span::before {
+  /* top and bottom lines of the hamburger icon */
+  content: '';
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
 
-/* line 142, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-nav-trigger span::before { -webkit-transform: translateY(-6px); -moz-transform: translateY(-6px); -ms-transform: translateY(-6px); -o-transform: translateY(-6px); transform: translateY(-6px); }
+.cd-nav-trigger span::before {
+  -webkit-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
 
-/* line 150, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-nav-trigger span::after { -webkit-transform: translateY(6px); -moz-transform: translateY(6px); -ms-transform: translateY(6px); -o-transform: translateY(6px); transform: translateY(6px); }
+.cd-nav-trigger span::after {
+  -webkit-transform: translateY(6px);
+  transform: translateY(6px);
+}
 
-/* line 158, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .no-touch .cd-nav-trigger:hover ~ .stretchy-nav-bg { box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); }
+.no-touch .cd-nav-trigger:hover ~ .stretchy-nav-bg {
+  -webkit-box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
 
-/* line 162, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .nav-is-visible .cd-nav-trigger span { background-color: transparent; }
+.nav-is-visible .cd-nav-trigger span {
+  background-color: transparent;
+}
 
-/* line 166, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .nav-is-visible .cd-nav-trigger span::before { -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); }
+.nav-is-visible .cd-nav-trigger span::before {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
 
-/* line 174, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .nav-is-visible .cd-nav-trigger span::after { -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+.nav-is-visible .cd-nav-trigger span::after {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 
-/* line 182, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav ul { position: relative; z-index: 2; padding: 60px 0 0; visibility: hidden; -webkit-transition: visibility 0.3s; -moz-transition: visibility 0.3s; transition: visibility 0.3s; text-align: right; }
+.cd-stretchy-nav ul {
+  position: relative;
+  z-index: 2;
+  padding: 60px 0 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0.3s;
+  transition: visibility 0.3s;
+  text-align: right;
+}
 
-/* line 193, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav ul a { position: relative; display: block; height: 50px; line-height: 50px; padding: 0 calc(1em + 60px) 0 1em; color: #003c5d; font-size: 1.4rem; -webkit-transition: color 0.2s; -moz-transition: color 0.2s; transition: color 0.2s; }
+.cd-stretchy-nav ul a {
+  position: relative;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 calc(1em + 60px) 0 1em;
+  color: #003c5d;
+  font-size: 1.4rem;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
 
-/* line 206, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav ul a::after { /* navigation item icons */ content: ''; position: absolute; height: 16px; width: 16px; right: 22px; top: 50%; -webkit-transform: translateY(-50%) scale(0); -moz-transform: translateY(-50%) scale(0); -ms-transform: translateY(-50%) scale(0); -o-transform: translateY(-50%) scale(0); transform: translateY(-50%) scale(0); opacity: .6; background: url(../img/cd-sprite-1.svg) no-repeat 0 0; }
+.cd-stretchy-nav ul a::after {
+  /* navigation item icons */
+  content: '';
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  right: 22px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) scale(0);
+  transform: translateY(-50%) scale(0);
+  opacity: .6;
+  background: url(../images/icons/cd-sprite-1.svg) no-repeat 0 0;
+}
 
-/* line 223, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav ul a::before { /* line visible next to the active navigation item */ content: ''; position: absolute; width: 3px; height: 16px; top: 50%; right: 60px; -webkit-transform: translateX(3px) translateY(-50%) scaleY(0); -moz-transform: translateX(3px) translateY(-50%) scaleY(0); -ms-transform: translateX(3px) translateY(-50%) scaleY(0); -o-transform: translateX(3px) translateY(-50%) scaleY(0); transform: translateX(3px) translateY(-50%) scaleY(0); background-color: #0a9581; }
+.cd-stretchy-nav ul a::before {
+  /* line visible next to the active navigation item */
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 16px;
+  top: 50%;
+  right: 60px;
+  -webkit-transform: translateX(3px) translateY(-50%) scaleY(0);
+  transform: translateX(3px) translateY(-50%) scaleY(0);
+  background-color: #0a9581;
+}
 
-/* line 239, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav ul li:first-of-type a::after { /* change custom icon using image sprites */ background-position: -32px 0; }
+.cd-stretchy-nav ul li:first-of-type a::after {
+  /* change custom icon using image sprites */
+  background-position: -32px 0;
+}
 
-/* line 244, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav ul li:nth-of-type(2) a::after { background-position: -64px 0; }
+.cd-stretchy-nav ul li:nth-of-type(2) a::after {
+  background-position: -64px 0;
+}
 
-/* line 248, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav ul li:nth-of-type(3) a::after { background-position: -48px 0; }
+.cd-stretchy-nav ul li:nth-of-type(3) a::after {
+  background-position: -48px 0;
+}
 
-/* line 252, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav ul li:nth-of-type(4) a::after { background-position: 0 0; }
+.cd-stretchy-nav ul li:nth-of-type(4) a::after {
+  background-position: 0 0;
+}
 
-/* line 256, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav ul li:nth-of-type(5) a::after { background-position: -16px 0; }
+.cd-stretchy-nav ul li:nth-of-type(5) a::after {
+  background-position: -16px 0;
+}
 
-/* line 260, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav ul span { /* navigation item labels */ display: block; opacity: 0; -webkit-transform: translateX(-25px); -moz-transform: translateX(-25px); -ms-transform: translateX(-25px); -o-transform: translateX(-25px); transform: translateX(-25px); }
+.cd-stretchy-nav ul span {
+  /* navigation item labels */
+  display: block;
+  opacity: 0;
+  -webkit-transform: translateX(-25px);
+  transform: translateX(-25px);
+}
 
-/* line 271, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.nav-is-visible ul { visibility: visible; }
+.cd-stretchy-nav.nav-is-visible ul {
+  visibility: visible;
+}
 
-/* line 275, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.nav-is-visible ul a::after { /* navigation item icons */ -webkit-transform: translateY(-50%) scale(1); -moz-transform: translateY(-50%) scale(1); -ms-transform: translateY(-50%) scale(1); -o-transform: translateY(-50%) scale(1); transform: translateY(-50%) scale(1); -webkit-animation: scaleIn 0.15s backwards; -moz-animation: scaleIn 0.15s backwards; animation: scaleIn 0.15s backwards; -webkit-transition: opacity 0.2s; -moz-transition: opacity 0.2s; transition: opacity 0.2s; }
+.cd-stretchy-nav.nav-is-visible ul a::after {
+  /* navigation item icons */
+  -webkit-transform: translateY(-50%) scale(1);
+  transform: translateY(-50%) scale(1);
+  -webkit-animation: scaleIn 0.15s backwards;
+  animation: scaleIn 0.15s backwards;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
 
-/* line 290, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.nav-is-visible ul a.active { color: #ffffff; }
+.cd-stretchy-nav.nav-is-visible ul a.active {
+  color: #ffffff;
+}
 
-/* line 294, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.nav-is-visible ul a.active::after { opacity: 1; }
+.cd-stretchy-nav.nav-is-visible ul a.active::after {
+  opacity: 1;
+}
 
-/* line 298, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.nav-is-visible ul a.active::before { -webkit-transform: translateX(3px) translateY(-50%) scaleY(1); -moz-transform: translateX(3px) translateY(-50%) scaleY(1); -ms-transform: translateX(3px) translateY(-50%) scaleY(1); -o-transform: translateX(3px) translateY(-50%) scaleY(1); transform: translateX(3px) translateY(-50%) scaleY(1); -webkit-transition: -webkit-transform 0.15s 0.3s; -moz-transition: -moz-transform 0.15s 0.3s; transition: transform 0.15s 0.3s; }
+.cd-stretchy-nav.nav-is-visible ul a.active::before {
+  -webkit-transform: translateX(3px) translateY(-50%) scaleY(1);
+  transform: translateX(3px) translateY(-50%) scaleY(1);
+  -webkit-transition: -webkit-transform 0.15s 0.3s;
+  transition: -webkit-transform 0.15s 0.3s;
+  transition: transform 0.15s 0.3s;
+  transition: transform 0.15s 0.3s, -webkit-transform 0.15s 0.3s;
+}
 
-/* line 309, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.nav-is-visible ul span { opacity: 1; -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); -webkit-animation: slideIn 0.15s backwards; -moz-animation: slideIn 0.15s backwards; animation: slideIn 0.15s backwards; -webkit-transition: -webkit-transform 0.2s; -moz-transition: -moz-transform 0.2s; transition: transform 0.2s; }
+.cd-stretchy-nav.nav-is-visible ul span {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-animation: slideIn 0.15s backwards;
+  animation: slideIn 0.15s backwards;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
 
-/* line 324, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .no-touch .cd-stretchy-nav.nav-is-visible ul a:hover { color: #ffffff; }
+.no-touch .cd-stretchy-nav.nav-is-visible ul a:hover {
+  color: #ffffff;
+}
 
-/* line 328, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .no-touch .cd-stretchy-nav.nav-is-visible ul a:hover::after { opacity: 1; }
+.no-touch .cd-stretchy-nav.nav-is-visible ul a:hover::after {
+  opacity: 1;
+}
 
-/* line 332, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .no-touch .cd-stretchy-nav.nav-is-visible ul a:hover span { -webkit-transform: translateX(-5px); -moz-transform: translateX(-5px); -ms-transform: translateX(-5px); -o-transform: translateX(-5px); transform: translateX(-5px); }
+.no-touch .cd-stretchy-nav.nav-is-visible ul a:hover span {
+  -webkit-transform: translateX(-5px);
+  transform: translateX(-5px);
+}
 
-/* line 340, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.nav-is-visible ul li:first-of-type a::after, .cd-stretchy-nav.nav-is-visible ul li:first-of-type span { -webkit-animation-delay: 0.05s; -moz-animation-delay: 0.05s; animation-delay: 0.05s; }
+.cd-stretchy-nav.nav-is-visible ul li:first-of-type a::after,
+.cd-stretchy-nav.nav-is-visible ul li:first-of-type span {
+  -webkit-animation-delay: 0.05s;
+  animation-delay: 0.05s;
+}
 
-/* line 347, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.nav-is-visible ul li:nth-of-type(2) a::after, .cd-stretchy-nav.nav-is-visible ul li:nth-of-type(2) span { -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s; }
+.cd-stretchy-nav.nav-is-visible ul li:nth-of-type(2) a::after,
+.cd-stretchy-nav.nav-is-visible ul li:nth-of-type(2) span {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
 
-/* line 354, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.nav-is-visible ul li:nth-of-type(3) a::after, .cd-stretchy-nav.nav-is-visible ul li:nth-of-type(3) span { -webkit-animation-delay: 0.15s; -moz-animation-delay: 0.15s; animation-delay: 0.15s; }
+.cd-stretchy-nav.nav-is-visible ul li:nth-of-type(3) a::after,
+.cd-stretchy-nav.nav-is-visible ul li:nth-of-type(3) span {
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+}
 
-/* line 361, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.nav-is-visible ul li:nth-of-type(4) a::after, .cd-stretchy-nav.nav-is-visible ul li:nth-of-type(4) span { -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s; }
+.cd-stretchy-nav.nav-is-visible ul li:nth-of-type(4) a::after,
+.cd-stretchy-nav.nav-is-visible ul li:nth-of-type(4) span {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
 
-/* line 368, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.nav-is-visible ul li:nth-of-type(5) a::after, .cd-stretchy-nav.nav-is-visible ul li:nth-of-type(5) span { -webkit-animation-delay: 0.25s; -moz-animation-delay: 0.25s; animation-delay: 0.25s; }
+.cd-stretchy-nav.nav-is-visible ul li:nth-of-type(5) a::after,
+.cd-stretchy-nav.nav-is-visible ul li:nth-of-type(5) span {
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
 
 /* -------------------------------- 
 
 add-content navigation style
 
 -------------------------------- */
-/* line 380, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.add-content { bottom: 50px; top: auto; left: 50%; right: auto; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); width: 300px; }
+.cd-stretchy-nav.add-content {
+  bottom: 50px;
+  top: auto;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 300px;
+}
 
-/* line 393, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.add-content .stretchy-nav-bg { left: 50%; right: auto; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); background-color: #8ac57f; -webkit-transition: width 0.2s, box-shadow 0.2s; -moz-transition: width 0.2s, box-shadow 0.2s; transition: width 0.2s, box-shadow 0.2s; }
+.cd-stretchy-nav.add-content .stretchy-nav-bg {
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #8ac57f;
+  -webkit-transition: width 0.2s, box-shadow 0.2s;
+  -webkit-transition: width 0.2s, -webkit-box-shadow 0.2s;
+  transition: width 0.2s, -webkit-box-shadow 0.2s;
+  transition: width 0.2s, box-shadow 0.2s;
+  transition: width 0.2s, box-shadow 0.2s, -webkit-box-shadow 0.2s;
+}
 
-/* line 407, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.add-content.nav-is-visible .stretchy-nav-bg { width: 100%; box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); }
+.cd-stretchy-nav.add-content.nav-is-visible .stretchy-nav-bg {
+  width: 100%;
+  -webkit-box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
 
-/* line 412, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.add-content .cd-nav-trigger { left: 50%; right: auto; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); background-color: #9acd91; }
+.cd-stretchy-nav.add-content .cd-nav-trigger {
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #9acd91;
+}
 
-/* line 423, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.add-content .cd-nav-trigger span { background-color: transparent; }
+.cd-stretchy-nav.add-content .cd-nav-trigger span {
+  background-color: transparent;
+}
 
-/* line 427, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.add-content .cd-nav-trigger span::before { /* used to create the plus icon */ -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); transform: rotate(90deg); }
+.cd-stretchy-nav.add-content .cd-nav-trigger span::before {
+  /* used to create the plus icon */
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
 
-/* line 436, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.add-content .cd-nav-trigger span::after { /* used to create the plus icon */ -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); }
+.cd-stretchy-nav.add-content .cd-nav-trigger span::after {
+  /* used to create the plus icon */
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
 
-/* line 445, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.add-content.nav-is-visible .cd-nav-trigger { box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); }
+.cd-stretchy-nav.add-content.nav-is-visible .cd-nav-trigger {
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
 
-/* line 449, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.add-content.nav-is-visible .cd-nav-trigger span::before { -webkit-transform: rotate(-135deg); -moz-transform: rotate(-135deg); -ms-transform: rotate(-135deg); -o-transform: rotate(-135deg); transform: rotate(-135deg); }
+.cd-stretchy-nav.add-content.nav-is-visible .cd-nav-trigger span::before {
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
 
-/* line 457, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.add-content.nav-is-visible .cd-nav-trigger span::after { -webkit-transform: rotate(-225deg); -moz-transform: rotate(-225deg); -ms-transform: rotate(-225deg); -o-transform: rotate(-225deg); transform: rotate(-225deg); }
+.cd-stretchy-nav.add-content.nav-is-visible .cd-nav-trigger span::after {
+  -webkit-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+}
 
-/* line 465, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.add-content ul { padding-top: 0; }
+.cd-stretchy-nav.add-content ul {
+  padding-top: 0;
+}
 
-/* line 469, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.add-content ul::after { clear: both; content: ""; display: table; }
+.cd-stretchy-nav.add-content ul::after {
+  clear: both;
+  content: "";
+  display: table;
+}
 
-/* line 475, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.add-content ul li { display: inline-block; width: 60px; }
+.cd-stretchy-nav.add-content ul li {
+  display: inline-block;
+  width: 60px;
+}
 
-/* line 481, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.add-content ul li:nth-of-type(2) { /* space occupied by the navigation trigger */ margin-right: 60px; }
+.cd-stretchy-nav.add-content ul li:nth-of-type(2) {
+  /* space occupied by the navigation trigger */
+  margin-right: 60px;
+}
 
-/* line 486, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.add-content ul a { padding: 0; height: 60px; width: 100%; }
+.cd-stretchy-nav.add-content ul a {
+  padding: 0;
+  height: 60px;
+  width: 100%;
+}
 
-/* line 492, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.add-content ul a::after { top: 50%; left: 22px; right: auto; -webkit-transform: translateY(-50%) scale(0); -moz-transform: translateY(-50%) scale(0); -ms-transform: translateY(-50%) scale(0); -o-transform: translateY(-50%) scale(0); transform: translateY(-50%) scale(0); background-image: url(../img/cd-sprite-2.svg); }
+.cd-stretchy-nav.add-content ul a::after {
+  top: 50%;
+  left: 22px;
+  right: auto;
+  -webkit-transform: translateY(-50%) scale(0);
+  transform: translateY(-50%) scale(0);
+  background-image: url(../images/icons/cd-sprite-2.svg);
+}
 
-/* line 504, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.add-content ul li:first-of-type a::after { background-position: -16px 0px; }
+.cd-stretchy-nav.add-content ul li:first-of-type a::after {
+  background-position: -16px 0px;
+}
 
-/* line 508, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.add-content ul li:nth-of-type(2) a::after { background-position: 0px 0px; }
+.cd-stretchy-nav.add-content ul li:nth-of-type(2) a::after {
+  background-position: 0px 0px;
+}
 
-/* line 512, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.add-content ul li:nth-of-type(3) a::after { background-position: -48px 0px; }
+.cd-stretchy-nav.add-content ul li:nth-of-type(3) a::after {
+  background-position: -48px 0px;
+}
 
-/* line 516, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.add-content ul li:nth-of-type(4) a::after { background-position: -32px 0px; }
+.cd-stretchy-nav.add-content ul li:nth-of-type(4) a::after {
+  background-position: -32px 0px;
+}
 
-/* line 520, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.add-content ul li:first-of-type a::after, .cd-stretchy-nav.add-content ul li:nth-of-type(4) a::after { -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s; }
+.cd-stretchy-nav.add-content ul li:first-of-type a::after,
+.cd-stretchy-nav.add-content ul li:nth-of-type(4) a::after {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
 
-/* line 527, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.add-content ul li:nth-of-type(2) a::after, .cd-stretchy-nav.add-content ul li:nth-of-type(3) a::after { -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s; }
+.cd-stretchy-nav.add-content ul li:nth-of-type(2) a::after,
+.cd-stretchy-nav.add-content ul li:nth-of-type(3) a::after {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
 
-/* line 534, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.add-content.nav-is-visible ul a::after { -webkit-animation-name: scaleIn; -moz-animation-name: scaleIn; animation-name: scaleIn; -webkit-transform: translateY(-50%) scale(1); -moz-transform: translateY(-50%) scale(1); -ms-transform: translateY(-50%) scale(1); -o-transform: translateY(-50%) scale(1); transform: translateY(-50%) scale(1); }
+.cd-stretchy-nav.add-content.nav-is-visible ul a::after {
+  -webkit-animation-name: scaleIn;
+  animation-name: scaleIn;
+  -webkit-transform: translateY(-50%) scale(1);
+  transform: translateY(-50%) scale(1);
+}
 
-/* line 545, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.add-content ul span { position: absolute; left: 0; top: -20px; width: 100%; padding: 0.6em 0; opacity: 0; visibility: hidden; background-color: rgba(0, 0, 0, 0.8); border-radius: 2px; font-size: 1.2rem; line-height: 1; white-space: nowrap; text-align: center; -webkit-transition: opacity 0.2s, visibility 0.2s; -moz-transition: opacity 0.2s, visibility 0.2s; transition: opacity 0.2s, visibility 0.2s; /* reset default style */ -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
+.cd-stretchy-nav.add-content ul span {
+  position: absolute;
+  left: 0;
+  top: -20px;
+  width: 100%;
+  padding: 0.6em 0;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 2px;
+  font-size: 1.2rem;
+  line-height: 1;
+  white-space: nowrap;
+  text-align: center;
+  -webkit-transition: opacity 0.2s, visibility 0.2s;
+  transition: opacity 0.2s, visibility 0.2s;
+  /* reset default style */
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
 
-/* line 571, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.add-content ul span::after { /* triangle below the tooltip */ content: ''; position: absolute; top: 100%; left: 50%; right: auto; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); height: 0; width: 0; border: 4px solid transparent; border-top-color: rgba(0, 0, 0, 0.8); }
+.cd-stretchy-nav.add-content ul span::after {
+  /* triangle below the tooltip */
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 0;
+  width: 0;
+  border: 4px solid transparent;
+  border-top-color: rgba(0, 0, 0, 0.8);
+}
 
-/* line 589, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.add-content.nav-is-visible ul span { /* reset default style */ -webkit-animation: none; -moz-animation: none; animation: none; }
+.cd-stretchy-nav.add-content.nav-is-visible ul span {
+  /* reset default style */
+  -webkit-animation: none;
+  animation: none;
+}
 
-/* line 596, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .no-touch .cd-stretchy-nav.add-content.nav-is-visible ul a:hover span { opacity: 1; visibility: visible; /* reset default style */ -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
+.no-touch .cd-stretchy-nav.add-content.nav-is-visible ul a:hover span {
+  opacity: 1;
+  visibility: visible;
+  /* reset default style */
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
 
 /* -------------------------------- 
 
 edit content
 
 -------------------------------- */
-/* line 613, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-editable-content { /* used to wrap the image and the navigation */ position: relative; width: 90%; max-width: 400px; margin: 4em auto; }
+.cd-editable-content {
+  /* used to wrap the image and the navigation */
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: 4em auto;
+}
 
-/* line 621, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-editable-content img { display: block; border-radius: .25em; }
+.cd-editable-content img {
+  display: block;
+  border-radius: .25em;
+}
 
-/* line 626, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.edit-content { position: absolute; top: 0; right: 0; }
+.cd-stretchy-nav.edit-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
-/* line 632, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.edit-content .stretchy-nav-bg { height: 30px; width: 30px; box-shadow: none; -webkit-transition: background 0.2s, height 0.2s; -moz-transition: background 0.2s, height 0.2s; transition: background 0.2s, height 0.2s; }
+.cd-stretchy-nav.edit-content .stretchy-nav-bg {
+  height: 30px;
+  width: 30px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: background 0.2s, height 0.2s;
+  transition: background 0.2s, height 0.2s;
+}
 
-/* line 642, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.edit-content.nav-is-visible .stretchy-nav-bg { height: 100%; background-color: rgba(0, 0, 0, 0.8); /* reset default style */ box-shadow: none; }
+.cd-stretchy-nav.edit-content.nav-is-visible .stretchy-nav-bg {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* reset default style */
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 
-/* line 650, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.edit-content .cd-nav-trigger { height: 30px; width: 30px; }
+.cd-stretchy-nav.edit-content .cd-nav-trigger {
+  height: 30px;
+  width: 30px;
+}
 
-/* line 655, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.edit-content .cd-nav-trigger span { opacity: 0; background-color: transparent; }
+.cd-stretchy-nav.edit-content .cd-nav-trigger span {
+  opacity: 0;
+  background-color: transparent;
+}
 
-/* line 660, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.edit-content .cd-nav-trigger span::before { -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); }
+.cd-stretchy-nav.edit-content .cd-nav-trigger span::before {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
 
-/* line 668, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.edit-content .cd-nav-trigger span::after { -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+.cd-stretchy-nav.edit-content .cd-nav-trigger span::after {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 
-/* line 676, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.edit-content .cd-nav-trigger span, .cd-stretchy-nav.edit-content .cd-nav-trigger span::before, .cd-stretchy-nav.edit-content .cd-nav-trigger span::after { /* used to create the 'X' icon when the navigation is open */ width: 12px; }
+.cd-stretchy-nav.edit-content .cd-nav-trigger span, .cd-stretchy-nav.edit-content .cd-nav-trigger span::before, .cd-stretchy-nav.edit-content .cd-nav-trigger span::after {
+  /* used to create the 'X' icon when the navigation is open */
+  width: 12px;
+}
 
-/* line 681, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.edit-content .cd-nav-trigger::after { /* edit icon */ content: ''; position: absolute; height: 16px; width: 16px; left: 50%; top: 50%; bottom: auto; right: auto; -webkit-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); background: url(../img/cd-sprite-3.svg) no-repeat 0 0; }
+.cd-stretchy-nav.edit-content .cd-nav-trigger::after {
+  /* edit icon */
+  content: '';
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(../images/icons/cd-sprite-3.svg) no-repeat 0 0;
+}
 
-/* line 699, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.edit-content .cd-nav-trigger span, .cd-stretchy-nav.edit-content .cd-nav-trigger::after { -webkit-transition: opacity 0.2s; -moz-transition: opacity 0.2s; transition: opacity 0.2s; }
+.cd-stretchy-nav.edit-content .cd-nav-trigger span, .cd-stretchy-nav.edit-content .cd-nav-trigger::after {
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
 
-/* line 705, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .no-touch .cd-stretchy-nav.edit-content .cd-nav-trigger:hover ~ .stretchy-nav-bg { box-shadow: none; }
+.no-touch .cd-stretchy-nav.edit-content .cd-nav-trigger:hover ~ .stretchy-nav-bg {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 
-/* line 710, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.edit-content.nav-is-visible .cd-nav-trigger span { opacity: 1; }
+.cd-stretchy-nav.edit-content.nav-is-visible .cd-nav-trigger span {
+  opacity: 1;
+}
 
-/* line 714, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.edit-content.nav-is-visible .cd-nav-trigger span::before { -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+.cd-stretchy-nav.edit-content.nav-is-visible .cd-nav-trigger span::before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 
-/* line 722, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.edit-content.nav-is-visible .cd-nav-trigger span::after { -webkit-transform: rotate(135deg); -moz-transform: rotate(135deg); -ms-transform: rotate(135deg); -o-transform: rotate(135deg); transform: rotate(135deg); }
+.cd-stretchy-nav.edit-content.nav-is-visible .cd-nav-trigger span::after {
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
 
-/* line 730, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.edit-content.nav-is-visible .cd-nav-trigger::after { /* hide edit icon */ opacity: 0; }
+.cd-stretchy-nav.edit-content.nav-is-visible .cd-nav-trigger::after {
+  /* hide edit icon */
+  opacity: 0;
+}
 
-/* line 735, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.edit-content ul { padding-top: 30px; }
+.cd-stretchy-nav.edit-content ul {
+  padding-top: 30px;
+}
 
-/* line 739, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.edit-content ul a { width: 30px; height: 30px; line-height: 30px; padding: 0; }
+.cd-stretchy-nav.edit-content ul a {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0;
+}
 
-/* line 746, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.edit-content ul a::after { right: 7px; background-image: url(../img/cd-sprite-3.svg); }
+.cd-stretchy-nav.edit-content ul a::after {
+  right: 7px;
+  background-image: url(../images/icons/cd-sprite-3.svg);
+}
 
-/* line 751, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.edit-content ul li:first-of-type a::after { background-position: -16px 0; }
+.cd-stretchy-nav.edit-content ul li:first-of-type a::after {
+  background-position: -16px 0;
+}
 
-/* line 755, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.edit-content ul li:nth-of-type(2) a::after { background-position: -32px 0; }
+.cd-stretchy-nav.edit-content ul li:nth-of-type(2) a::after {
+  background-position: -32px 0;
+}
 
-/* line 759, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.edit-content ul li:nth-of-type(3) a::after { background-position: -48px 0; }
+.cd-stretchy-nav.edit-content ul li:nth-of-type(3) a::after {
+  background-position: -48px 0;
+}
 
-/* line 763, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.edit-content ul li:nth-of-type(4) a::after { background-position: -64px 0; }
+.cd-stretchy-nav.edit-content ul li:nth-of-type(4) a::after {
+  background-position: -64px 0;
+}
 
-/* line 767, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.edit-content ul span { position: absolute; top: 0; right: 35px; height: 30px; line-height: 30px; padding: 0 1em; opacity: 0; visibility: hidden; background-color: rgba(0, 0, 0, 0.55); border-radius: 2px; text-align: center; -webkit-transition: opacity 0.2s, visibility 0.2s; -moz-transition: opacity 0.2s, visibility 0.2s; transition: opacity 0.2s, visibility 0.2s; }
+.cd-stretchy-nav.edit-content ul span {
+  position: absolute;
+  top: 0;
+  right: 35px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 1em;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.55);
+  border-radius: 2px;
+  text-align: center;
+  -webkit-transition: opacity 0.2s, visibility 0.2s;
+  transition: opacity 0.2s, visibility 0.2s;
+}
 
-/* line 784, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.edit-content ul span::after { /* triangle below the tooltip */ content: ''; position: absolute; left: 100%; top: 50%; bottom: auto; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%); height: 0; width: 0; border: 4px solid transparent; border-left-color: rgba(0, 0, 0, 0.55); }
+.cd-stretchy-nav.edit-content ul span::after {
+  /* triangle below the tooltip */
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 0;
+  width: 0;
+  border: 4px solid transparent;
+  border-left-color: rgba(0, 0, 0, 0.55);
+}
 
-/* line 802, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-stretchy-nav.edit-content.nav-is-visible ul span { /* reset default style */ -webkit-animation: none; -moz-animation: none; animation: none; }
+.cd-stretchy-nav.edit-content.nav-is-visible ul span {
+  /* reset default style */
+  -webkit-animation: none;
+  animation: none;
+}
 
-/* line 809, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .no-touch .cd-stretchy-nav.edit-content.nav-is-visible ul a:hover span { opacity: 1; visibility: visible; /* reset default style */ -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
+.no-touch .cd-stretchy-nav.edit-content.nav-is-visible ul a:hover span {
+  opacity: 1;
+  visibility: visible;
+  /* reset default style */
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
 
 /* -------------------------------- 
 
 main content basic style
 
 -------------------------------- */
-/* line 826, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_navigation-secondary/_navigation.scss */ .cd-main-content { position: relative; z-index: 1; min-height: 100vh; padding: 100px 0; background-color: #003c5d; }
+.cd-main-content {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  padding: 100px 0;
+  background-color: #003c5d;
+}
 
 /* -------------------------------- 
 
 keyframes
 
 -------------------------------- */
-@-webkit-keyframes scaleIn { from { -webkit-transform: translateY(-50%) scale(0); }
-  to { -webkit-transform: translateY(-50%) scale(1); } }
+@-webkit-keyframes scaleIn {
+  from {
+    -webkit-transform: translateY(-50%) scale(0);
+  }
+  to {
+    -webkit-transform: translateY(-50%) scale(1);
+  }
+}
 
-@-moz-keyframes scaleIn { from { -moz-transform: translateY(-50%) scale(0); }
-  to { -moz-transform: translateY(-50%) scale(1); } }
+@keyframes scaleIn {
+  from {
+    -webkit-transform: translateY(-50%) scale(0);
+    transform: translateY(-50%) scale(0);
+  }
+  to {
+    -webkit-transform: translateY(-50%) scale(1);
+    transform: translateY(-50%) scale(1);
+  }
+}
 
-@keyframes scaleIn { from { -webkit-transform: translateY(-50%) scale(0);
-    -moz-transform: translateY(-50%) scale(0);
-    -ms-transform: translateY(-50%) scale(0);
-    -o-transform: translateY(-50%) scale(0);
-    transform: translateY(-50%) scale(0); }
-  to { -webkit-transform: translateY(-50%) scale(1);
-    -moz-transform: translateY(-50%) scale(1);
-    -ms-transform: translateY(-50%) scale(1);
-    -o-transform: translateY(-50%) scale(1);
-    transform: translateY(-50%) scale(1); } }
-
-@-webkit-keyframes slideIn { from { opacity: 0;
-    -webkit-transform: translateX(-25px); }
-  to { opacity: 1;
-    -webkit-transform: translateX(0); } }
-
-@-moz-keyframes slideIn { from { opacity: 0;
-    -moz-transform: translateX(-25px); }
-  to { opacity: 1;
-    -moz-transform: translateX(0); } }
-
-@keyframes slideIn { from { opacity: 0;
+@-webkit-keyframes slideIn {
+  from {
+    opacity: 0;
     -webkit-transform: translateX(-25px);
-    -moz-transform: translateX(-25px);
-    -ms-transform: translateX(-25px);
-    -o-transform: translateX(-25px);
-    transform: translateX(-25px); }
-  to { opacity: 1;
+  }
+  to {
+    opacity: 1;
     -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-    transform: translateX(0); } }
+  }
+}
 
-/* line 11, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] { max-width: 1600px; margin: 30px 15px; }
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-25px);
+    transform: translateX(-25px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
 
-@media (min-width: 800px) { /* line 11, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] { display: flex; margin: 30px auto; } }
+main[role=main] {
+  max-width: 1600px;
+  margin: 30px 15px;
+}
 
-@media (min-width: 500px) { /* line 14, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] article, main[role=main] aside { margin: 15px; } }
+@media (min-width: 800px) {
+  main[role=main] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 30px auto;
+  }
+}
 
-@media (min-width: 800px) { /* line 14, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] article, main[role=main] aside { margin: 30px; padding: 15px; } }
+@media (min-width: 500px) {
+  main[role=main] article, main[role=main] aside {
+    margin: 15px;
+  }
+}
 
-@media (min-width: 1200px) { /* line 14, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] article, main[role=main] aside { margin: 30px; } }
+@media (min-width: 800px) {
+  main[role=main] article, main[role=main] aside {
+    margin: 30px;
+    padding: 15px;
+  }
+}
 
-/* line 35, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] section.the-content { order: 1; }
+@media (min-width: 1200px) {
+  main[role=main] article, main[role=main] aside {
+    margin: 30px;
+  }
+}
 
-@media (min-width: 800px) { /* line 35, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] section.the-content { border-left: 1px solid #dfdfdf; border-right: 1px solid #dfdfdf; } }
+main[role=main] section.the-content {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
 
-@media (min-width: 500px) { /* line 35, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] section.the-content { flex: 4; } }
+@media (min-width: 800px) {
+  main[role=main] section.the-content {
+    border-left: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf;
+  }
+}
 
-@media (min-width: 800px) { /* line 35, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] section.the-content { flex: 5; } }
+@media (min-width: 500px) {
+  main[role=main] section.the-content {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+  }
+}
 
-@media (min-width: 1200px) { /* line 35, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] section.the-content { flex: 2; } }
+@media (min-width: 800px) {
+  main[role=main] section.the-content {
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+  }
+}
 
-/* line 61, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] section.the-content article { padding-bottom: 60px; position: relative; }
+@media (min-width: 1200px) {
+  main[role=main] section.the-content {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+}
 
-/* line 65, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] section.the-content article:nth-child(n+2) { padding-top: 60px; border-top: 1px solid #dfdfdf; }
+main[role=main] section.the-content article {
+  padding-bottom: 60px;
+  position: relative;
+}
 
-/* line 70, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] section.the-content article h3, main[role=main] section.the-content article p { margin: 15px 0; }
+main[role=main] section.the-content article:nth-child(n+2) {
+  padding-top: 60px;
+  border-top: 1px solid #dfdfdf;
+}
 
-@media (min-width: 800px) { /* line 70, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] section.the-content article h3, main[role=main] section.the-content article p { margin: 30px 0; } }
+main[role=main] section.the-content article h3, main[role=main] section.the-content article p {
+  margin: 15px 0;
+}
 
-/* line 78, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] section.the-content article h1, main[role=main] section.the-content article h3 { margin: 0; padding: 0; }
+@media (min-width: 800px) {
+  main[role=main] section.the-content article h3, main[role=main] section.the-content article p {
+    margin: 30px 0;
+  }
+}
 
-/* line 83, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] section.the-content article h1 { margin-left: -3px; }
+main[role=main] section.the-content article h1, main[role=main] section.the-content article h3 {
+  margin: 0;
+  padding: 0;
+}
 
-/* line 87, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] section.the-content article h1.rotate { transform: rotate(180deg); margin-top: 60px; margin-bottom: 0; padding-bottom: 0; }
+main[role=main] section.the-content article h1 {
+  margin-left: -3px;
+}
 
-/* line 94, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] section.the-content article h3.rotate { margin-top: 0; transform: rotate(180deg); }
+main[role=main] section.the-content article h1.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-top: 60px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 
-/* line 99, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] section.the-content article h3.date-published { margin: 30px 0; padding: 0; }
+main[role=main] section.the-content article h3.rotate {
+  margin-top: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
 
-/* line 103, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] section.the-content article h3.date-published span { margin: 0; padding: 0; }
+main[role=main] section.the-content article h3.date-published {
+  margin: 30px 0;
+  padding: 0;
+}
 
-/* line 107, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] section.the-content article h3.date-published span.day { font-size: 20px; margin-top: 4px; }
+main[role=main] section.the-content article h3.date-published span {
+  margin: 0;
+  padding: 0;
+}
 
-/* line 114, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] section.the-content article .author { font-size: 72%; font-weight: 700; }
+main[role=main] section.the-content article h3.date-published span.day {
+  font-size: 20px;
+  margin-top: 4px;
+}
 
-/* line 119, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] section.the-content article figure { padding: 30px 0 15px 0; }
+main[role=main] section.the-content article .author {
+  font-size: 72%;
+  font-weight: 700;
+}
 
-@media (min-width: 500px) { /* line 119, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] section.the-content article figure { padding: 60px 0; } }
+main[role=main] section.the-content article figure {
+  padding: 30px 0 15px 0;
+}
 
-/* line 127, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] section.the-content article img { width: calc(100%); height: auto; padding: 0; margin: 0; }
+@media (min-width: 500px) {
+  main[role=main] section.the-content article figure {
+    padding: 60px 0;
+  }
+}
 
-/* line 134, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] section.the-content article figcaption { font-size: 10px; text-align: right; opacity: .3; text-decoration: underline; padding-bottom: 15px; }
+main[role=main] section.the-content article img {
+  width: calc(100%);
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
 
-/* line 143, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] section.the-content .load-more-posts { text-align: center; padding: 60px 30px; display: block; margin: 60px auto; border-bottom: 0; max-width: 90%; }
+main[role=main] section.the-content article figcaption {
+  font-size: 10px;
+  text-align: right;
+  opacity: .3;
+  text-decoration: underline;
+  padding-bottom: 15px;
+}
 
-@media (min-width: 500px) { /* line 143, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] section.the-content .load-more-posts { padding: 30px; } }
+main[role=main] section.the-content .load-more-posts {
+  text-align: center;
+  padding: 60px 30px;
+  display: block;
+  margin: 60px auto;
+  border-bottom: 0;
+  max-width: 90%;
+}
 
-@media (min-width: 800px) { /* line 143, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] section.the-content .load-more-posts { max-width: 50%; } }
+@media (min-width: 500px) {
+  main[role=main] section.the-content .load-more-posts {
+    padding: 30px;
+  }
+}
 
-/* line 162, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] #left { order: 0; }
+@media (min-width: 800px) {
+  main[role=main] section.the-content .load-more-posts {
+    max-width: 50%;
+  }
+}
 
-@media (min-width: 500px) { /* line 162, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] #left { flex: 1; } }
+main[role=main] #left {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+}
 
-/* line 170, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] #right { order: 2; }
+@media (min-width: 500px) {
+  main[role=main] #left {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
 
-@media (min-width: 500px) { /* line 170, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_main.scss */ main[role=main] #right { flex: 1; } }
+main[role=main] #right {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
 
-/* line 1, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_header.scss */ header { display: flex; max-width: 100%; border-bottom: 1px solid #dfdfdf; }
+@media (min-width: 500px) {
+  main[role=main] #right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
 
-/* line 7, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_header.scss */ header .the-content { flex: 1; margin: auto; padding: 15px; }
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  border-bottom: 1px solid #dfdfdf;
+}
 
-@media (min-width: 500px) { /* line 7, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_header.scss */ header .the-content { text-align: center; margin-top: 15px; } }
+header .the-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: auto;
+  padding: 15px;
+}
 
-@media (min-width: 1200px) { /* line 7, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_header.scss */ header .the-content { padding-top: 30px; padding-bottom: 120px; margin-top: 120px; } }
+@media (min-width: 500px) {
+  header .the-content {
+    text-align: center;
+    margin-top: 15px;
+  }
+}
 
-/* line 1, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_footer.scss */ footer { max-width: 1600px; margin: 30px 15px; margin-top: 60px; }
+@media (min-width: 1200px) {
+  header .the-content {
+    padding-top: 30px;
+    padding-bottom: 120px;
+    margin-top: 120px;
+  }
+}
 
-/* line 2, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_footer.scss */ footer p, footer a { font-size: inherit; }
+footer {
+  max-width: 1600px;
+  margin: 30px 15px;
+  margin-top: 60px;
+}
 
-@media (min-width: 800px) { /* line 1, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_footer.scss */ footer { display: flex; margin: 30px auto; } }
+footer p, footer a {
+  font-size: inherit;
+}
 
-@media (min-width: 800px) { /* line 1, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_footer.scss */ footer { margin: 120px auto; } }
+@media (min-width: 800px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 30px auto;
+  }
+}
 
-/* line 16, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_footer.scss */ footer section { flex: 1; text-align: center; }
+@media (min-width: 800px) {
+  footer {
+    margin: 120px auto;
+  }
+}
 
-/* line 21, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_footer.scss */ footer section ul li { display: inline-block; margin: 0 15px; }
+footer section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
 
-/* line 25, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_footer.scss */ footer section ul li a { color: inherit; }
+footer section ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
 
-/* line 1, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_sticky-note-footer.scss */ .sticky-note-footer { margin-top: 60px; padding: 30px; padding: 15px 30px; background: rgba(255, 255, 255, 0.95); }
+footer section ul li a {
+  color: inherit;
+}
 
-@media (min-width: 800px) { /* line 1, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_sticky-note-footer.scss */ .sticky-note-footer { position: fixed; bottom: 0; box-shadow: 0px 0px 2px #dfdfdf; width: 100%; left: 0; right: 0; }
-  /* line 15, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_sticky-note-footer.scss */ .sticky-note-footer p, .sticky-note-footer a { display: inline; font-size: 14px; font-style: italic; } }
+.sticky-note-footer {
+  margin-top: 60px;
+  padding: 30px;
+  padding: 15px 30px;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+@media (min-width: 800px) {
+  .sticky-note-footer {
+    position: fixed;
+    bottom: 0;
+    -webkit-box-shadow: 0px 0px 2px #dfdfdf;
+            box-shadow: 0px 0px 2px #dfdfdf;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+  .sticky-note-footer p, .sticky-note-footer a {
+    display: inline;
+    font-size: 14px;
+    font-style: italic;
+  }
+}
 
 /****************************************/
 /* Styling rules, such as font and colors */
-/* line 10, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .date-as-calendar { border: 2px solid #003c5d; overflow: hidden; }
+.date-as-calendar {
+  border: 2px solid #003c5d;
+  overflow: hidden;
+}
 
-/* line 15, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .date-as-calendar .weekday, .date-as-calendar .day, .date-as-calendar .month, .date-as-calendar .year { text-align: center; line-height: 1.0; }
+.date-as-calendar .weekday,
+.date-as-calendar .day,
+.date-as-calendar .month,
+.date-as-calendar .year {
+  text-align: center;
+  line-height: 1.0;
+}
 
-/* line 23, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .date-as-calendar .month { text-transform: uppercase; background: #003c5d; color: white; }
+.date-as-calendar .month {
+  text-transform: uppercase;
+  background: #003c5d;
+  color: white;
+}
 
 /****************************************/
 /* Layout rules using position: absolute and pixels. */
-/* line 31, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .position-pixels.date-as-calendar { display: inline-block; position: relative; width: 64px; height: 64px; }
+.position-pixels.date-as-calendar {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
 
-/* line 38, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .position-pixels.date-as-calendar .weekday, .position-pixels.date-as-calendar .day, .position-pixels.date-as-calendar .month, .position-pixels.date-as-calendar .year { display: block; position: absolute; left: 0; right: 0; width: 100%; height: 1em; }
+.position-pixels.date-as-calendar .weekday,
+.position-pixels.date-as-calendar .day,
+.position-pixels.date-as-calendar .month,
+.position-pixels.date-as-calendar .year {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1em;
+}
 
-/* line 50, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .position-pixels.date-as-calendar .month { top: 0px; font-size: 12px; padding: 2px 0; }
+.position-pixels.date-as-calendar .month {
+  top: 0px;
+  font-size: 12px;
+  padding: 2px 0;
+}
 
-/* line 56, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .position-pixels.date-as-calendar .weekday { top: 16px; font-size: 10px; }
+.position-pixels.date-as-calendar .weekday {
+  top: 16px;
+  font-size: 10px;
+}
 
-/* line 61, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .position-pixels.date-as-calendar .day { top: 26px; font-size: 24px; }
+.position-pixels.date-as-calendar .day {
+  top: 26px;
+  font-size: 24px;
+}
 
-/* line 66, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .position-pixels.date-as-calendar .year { top: 50px; font-size: 14px; }
+.position-pixels.date-as-calendar .year {
+  top: 50px;
+  font-size: 14px;
+}
 
 /****************************************/
 /* Layout rules using position: absolute and relative dimensions using em. */
-/* line 73, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .position-em.date-as-calendar { display: inline-block; position: relative; width: 4em; height: 4em; }
+.position-em.date-as-calendar {
+  display: inline-block;
+  position: relative;
+  width: 4em;
+  height: 4em;
+}
 
-/* line 80, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .position-em.date-as-calendar .weekday, .position-em.date-as-calendar .day, .position-em.date-as-calendar .month, .position-em.date-as-calendar .year { display: block; position: absolute; left: 0; right: 0; width: 100%; height: 1em; }
+.position-em.date-as-calendar .weekday,
+.position-em.date-as-calendar .day,
+.position-em.date-as-calendar .month,
+.position-em.date-as-calendar .year {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1em;
+}
 
-/* line 92, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .position-em.date-as-calendar .month { top: 0px; font-size: 0.75em; padding: 0.1em 0; }
+.position-em.date-as-calendar .month {
+  top: 0px;
+  font-size: 0.75em;
+  padding: 0.1em 0;
+}
 
-/* line 98, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .position-em.date-as-calendar .weekday { top: 1.6em; font-size: 0.6125em; }
+.position-em.date-as-calendar .weekday {
+  top: 1.6em;
+  font-size: 0.6125em;
+}
 
-/* line 103, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .position-em.date-as-calendar .day { top: 1.1em; font-size: 1.5em; }
+.position-em.date-as-calendar .day {
+  top: 1.1em;
+  font-size: 1.5em;
+}
 
-/* line 108, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .position-em.date-as-calendar .year { bottom: 0px; font-size: 0.87750em; }
+.position-em.date-as-calendar .year {
+  bottom: 0px;
+  font-size: 0.87750em;
+}
 
 /****************************************/
 /* Layout rules using display: inline-flex and relative dimensions using em. */
-/* line 115, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .inline-flex.date-as-calendar { display: inline-flex; flex-direction: column; flex-wrap: nowrap; justify-content: space-between; width: 4em; height: 4em; }
+.inline-flex.date-as-calendar {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 4em;
+  height: 4em;
+}
 
-/* line 124, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .inline-flex.date-as-calendar .weekday, .inline-flex.date-as-calendar .day, .inline-flex.date-as-calendar .month, .inline-flex.date-as-calendar .year { display: block; flex: 1 1 auto; }
+.inline-flex.date-as-calendar .weekday,
+.inline-flex.date-as-calendar .day,
+.inline-flex.date-as-calendar .month,
+.inline-flex.date-as-calendar .year {
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
 
-/* line 132, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .inline-flex.date-as-calendar .month { order: 1; font-size: 0.75em; padding: 0.1em 0; }
+.inline-flex.date-as-calendar .month {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  font-size: 0.75em;
+  padding: 0.1em 0;
+}
 
-/* line 138, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .inline-flex.date-as-calendar .weekday { order: 2; font-size: 0.6125em; }
+.inline-flex.date-as-calendar .weekday {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  font-size: 0.6125em;
+}
 
-/* line 143, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .inline-flex.date-as-calendar .day { order: 3; font-size: 1.5em; }
+.inline-flex.date-as-calendar .day {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  font-size: 1.5em;
+}
 
-/* line 148, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .inline-flex.date-as-calendar .year { order: 4; font-size: 0.87750em; }
+.inline-flex.date-as-calendar .year {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+  font-size: 0.87750em;
+}
 
 /****************************************/
 /* Multiple sizes. */
-/* line 155, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .date-as-calendar.size0_5x { font-size: 8px; }
+.date-as-calendar.size0_5x {
+  font-size: 8px;
+}
 
-/* line 159, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .date-as-calendar.size0_75x { font-size: 12px; }
+.date-as-calendar.size0_75x {
+  font-size: 12px;
+}
 
-/* line 163, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .date-as-calendar.size1x { font-size: 16px; }
+.date-as-calendar.size1x {
+  font-size: 16px;
+}
 
-/* line 167, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .date-as-calendar.size1_25x { font-size: 20px; }
+.date-as-calendar.size1_25x {
+  font-size: 20px;
+}
 
-/* line 171, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .date-as-calendar.size1_5x { font-size: 24px; }
+.date-as-calendar.size1_5x {
+  font-size: 24px;
+}
 
-/* line 175, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .date-as-calendar.size1_75x { font-size: 28px; }
+.date-as-calendar.size1_75x {
+  font-size: 28px;
+}
 
-/* line 179, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .date-as-calendar.size2x { font-size: 32px; }
+.date-as-calendar.size2x {
+  font-size: 32px;
+}
 
-/* line 183, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_calendar.scss */ .date-as-calendar.size3x { font-size: 48px; }
+.date-as-calendar.size3x {
+  font-size: 48px;
+}
 
-/* line 1, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_spoiler.scss */ .cards { padding: 15px; display: flex; }
+.cards {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
-/* line 6, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_spoiler.scss */ .card { width: 100%; transition: all 0.2s ease-in-out; margin-top: 30px; }
+.card {
+  width: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin-top: 30px;
+}
 
-@media (min-width: 800px) { /* line 6, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_spoiler.scss */ .card { margin-top: 60px; } }
+@media (min-width: 800px) {
+  .card {
+    margin-top: 60px;
+  }
+}
 
-/* line 17, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_spoiler.scss */ .card:hover .card__inner { background-color: #003c5d; }
+.card:hover .card__inner {
+  background-color: #003c5d;
+}
 
-/* line 22, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_spoiler.scss */ .card__inner { padding: 30px; position: relative; cursor: pointer; background-color: #003c5d; color: white; font-size: 1.5em; text-transform: uppercase; text-align: center; transition: all 0.2s ease-in-out; }
+.card__inner {
+  padding: 30px;
+  position: relative;
+  cursor: pointer;
+  background-color: #003c5d;
+  color: white;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
 
-/* line 33, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_spoiler.scss */ .card__inner:after { transition: all 0.3s ease-in-out; }
+.card__inner:after {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
 
-/* line 37, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_spoiler.scss */ .card__inner .fa { width: 100%; margin: 7.5px auto 7.5px; }
+.card__inner .fa {
+  width: 100%;
+  margin: 7.5px auto 7.5px;
+}
 
-/* line 43, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_spoiler.scss */ .card__expander { transition: all 0.2s ease-in-out; position: relative; text-transform: uppercase; font-size: 1.5em; }
+.card__expander {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
 
-/* line 49, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_spoiler.scss */ .card__expander .fa { font-size: 0.75em; position: absolute; top: 10px; right: 10px; cursor: pointer; }
+.card__expander .fa {
+  font-size: 0.75em;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
 
-/* line 56, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_spoiler.scss */ .card__expander .fa:hover { opacity: 0.9; }
+.card__expander .fa:hover {
+  opacity: 0.9;
+}
 
-/* line 62, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_spoiler.scss */ .card.is-collapsed { margin-bottom: 15px; }
+.card.is-collapsed {
+  margin-bottom: 15px;
+}
 
-/* line 66, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_spoiler.scss */ .card.is-collapsed .card__inner:after { content: ""; opacity: 0; }
+.card.is-collapsed .card__inner:after {
+  content: "";
+  opacity: 0;
+}
 
-/* line 72, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_spoiler.scss */ .card.is-collapsed .card__expander { max-height: 0; min-height: 0; overflow: hidden; margin-top: 0; opacity: 0; }
+.card.is-collapsed .card__expander {
+  max-height: 0;
+  min-height: 0;
+  overflow: hidden;
+  margin-top: 0;
+  opacity: 0;
+}
 
-/* line 82, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_spoiler.scss */ .card.is-expanded .card__inner { background-color: #003c5d; height: 0; padding: 0; }
+.card.is-expanded .card__inner {
+  background-color: #003c5d;
+  height: 0;
+  padding: 0;
+}
 
-/* line 87, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_spoiler.scss */ .card.is-expanded .card__inner:after { content: "[ Close]"; font-size: 14px; opacity: 1; color: #dfdfdf; display: block; position: absolute; bottom: 0; text-align: center; }
+.card.is-expanded .card__inner:after {
+  content: "[ Close]";
+  font-size: 14px;
+  opacity: 1;
+  color: #dfdfdf;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
 
-/* line 98, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_spoiler.scss */ .card.is-expanded .card__inner:before { content: "⊗"; font-size: 34px; opacity: 1; color: #dfdfdf; display: block; position: absolute; bottom: -10px; right: 0; text-align: center; }
+.card.is-expanded .card__inner:before {
+  content: "⊗";
+  font-size: 34px;
+  opacity: 1;
+  color: #dfdfdf;
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  text-align: center;
+}
 
-/* line 111, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_spoiler.scss */ .card.is-expanded .card__expander { overflow: visible; opacity: 1; }
+.card.is-expanded .card__expander {
+  overflow: visible;
+  opacity: 1;
+}
 
-/* line 117, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_spoiler.scss */ .card.is-expanded:hover .card__inner { transform: scale(1); }
+.card.is-expanded:hover .card__inner {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
 
-/* line 124, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_spoiler.scss */ .card.is-inactive .card__inner { pointer-events: none; opacity: 0.5; }
+.card.is-inactive .card__inner {
+  pointer-events: none;
+  opacity: 0.5;
+}
 
-/* line 130, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_spoiler.scss */ .card.is-inactive:hover .card__inner { background-color: #003c5d; transform: scale(1); }
+.card.is-inactive:hover .card__inner {
+  background-color: #003c5d;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
 
-/* line 1, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_iframes.scss */ iframe { width: 100%; min-height: 300px; padding: 30px 0 5px; }
+iframe {
+  width: 100%;
+  min-height: 300px;
+  padding: 30px 0 5px;
+}
 
-@media (min-width: 500px) { /* line 1, Applications/MAMP/htdocs/_layouts/_flexbox/_simple/scss/_components/_iframes.scss */ iframe { min-height: 450px; padding: 30px 0 15px; } }
+@media (min-width: 500px) {
+  iframe {
+    min-height: 450px;
+    padding: 30px 0 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
