@@ -1,19 +1,25 @@
 header {
     display: flex;
-    max-width: 100%;
     border-bottom: 1px solid $grey;
 
-
     .the-content {
-        flex: 1;
-        margin: auto;
+        margin: auto auto auto 0;
         padding: $base-spacing/2;
-
-        @include breakpoint(small) {
-            text-align: center;
-            margin-top: $base-spacing / 2;
+        max-width: 80%;
+        h1 {
+            font-size: 30px;
+            margin: 0;
         }
 
+        @include breakpoint(small) {
+            margin: auto;
+            text-align: center;
+            margin-top: $base-spacing / 2;
+            h1 {
+                font-size: 4.242rem;
+                margin: 1.5rem auto;
+            }
+        }
 
         @include breakpoint(large) {
             padding-top: $base-spacing;
