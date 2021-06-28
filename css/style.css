@@ -1249,8 +1249,11 @@ footer section ul li a {
     left: 0;
     right: 0;
   }
-  .sticky-note-footer p, .sticky-note-footer a {
-    display: inline;
+  .sticky-note-footer p {
+    display: block;
+  }
+  .sticky-note-footer p,
+  .sticky-note-footer a {
     font-size: 14px;
     font-style: italic;
   }
