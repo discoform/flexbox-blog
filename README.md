@@ -1,4 +1,7 @@
+
 # flexbox-blog
+![before the fix](./read-me-assets/flexblog-screenshot.png)
+
 This is a simple blog layout that I created in 2018 to dip my toes into flexbox layouts. I recently re-visited the project and felt it still had some potential, but running it through Lighthouse made it clear that some work needed to be done before I could even consider this as a  potential layout template.
 
 ## Initial Lighthouse scores
