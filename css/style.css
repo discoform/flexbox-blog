@@ -1104,7 +1104,7 @@ main[role="main"] section.the-content article figure {
 }
 
 main[role="main"] section.the-content article img {
-  width: calc(100%);
+  width: 100%;
   height: auto;
   padding: 0;
   margin: 0;
