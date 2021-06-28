@@ -1072,19 +1072,20 @@ main[role="main"] section.the-content article h3.rotate {
           transform: rotate(180deg);
 }
 
-main[role="main"] section.the-content article h3.date-published {
+main[role="main"] section.the-content article .date-published {
   margin: 30px 0;
   padding: 0;
+  font-weight: bolder;
 }
 
-main[role="main"] section.the-content article h3.date-published span {
+main[role="main"] section.the-content article .date-published span {
   margin: 0;
   padding: 0;
 }
 
-main[role="main"] section.the-content article h3.date-published span.day {
-  font-size: 20px;
-  margin-top: 4px;
+main[role="main"] section.the-content article .date-published span.day {
+  font-size: 16px;
+  margin-top: 16px;
 }
 
 main[role="main"] section.the-content article .author {
