@@ -91,17 +91,18 @@ main[role="main"] {
                 transform: rotate(180deg);
             }
 
-            h3.date-published {
+            .date-published {
                 margin: $base-spacing 0;
                 padding: 0;
+                font-weight: bolder;
 
                 span {
                     margin: 0;
                     padding: 0;
 
                     &.day {
-                        font-size: 20px;
-                        margin-top: 4px;
+                        font-size: 16px;
+                        margin-top: 16px;
                     }
                 }
             }
