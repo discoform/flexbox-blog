@@ -7,15 +7,20 @@
     width: 100%;
     transition: all 0.2s ease-in-out;
     margin-top: $base-spacing;
+    svg {
+        fill: currentColor;
+        display: block;
+        margin: 0 auto $base-spacing;
+    }
 
     @include breakpoint(medium) {
         margin-top: $base-spacing * 2;
     }
 
-
     &:hover {
         .card__inner {
             background-color: $color-1;
+
         }
     }
 

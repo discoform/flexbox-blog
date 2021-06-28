@@ -1190,22 +1190,7 @@ header .the-content h1 {
 }
 
 footer {
-  max-width: 1600px;
-  margin: 30px 15px;
   margin-top: 60px;
-}
-
-footer p, footer a {
-  font-size: inherit;
-}
-
-@media (min-width: 800px) {
-  footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 30px auto;
-  }
 }
 
 @media (min-width: 800px) {
@@ -1230,6 +1215,10 @@ footer section ul li a {
   color: inherit;
 }
 
+footer section ul li a svg {
+  fill: currentColor;
+}
+
 .sticky-note-footer {
   margin-top: 60px;
   padding: 30px;
@@ -1240,12 +1229,11 @@ footer section ul li a {
 @media (min-width: 800px) {
   .sticky-note-footer {
     position: fixed;
-    bottom: 0;
     -webkit-box-shadow: 0px 0px 2px #dfdfdf;
             box-shadow: 0px 0px 2px #dfdfdf;
     width: 100%;
     left: 0;
-    right: 0;
+    bottom: 0;
   }
   .sticky-note-footer p {
     display: block;
@@ -1466,6 +1454,12 @@ footer section ul li a {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   margin-top: 30px;
+}
+
+.card svg {
+  fill: currentColor;
+  display: block;
+  margin: 0 auto 30px;
 }
 
 @media (min-width: 800px) {
