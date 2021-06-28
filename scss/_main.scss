@@ -127,10 +127,10 @@ main[role="main"] {
             }
 
             figcaption {
-                font-size: 10px;
+                font-size: 12px;
                 text-align: right;
-                opacity: 0.3;
-                text-decoration: underline;
+                margin-top: $base-spacing/4;
+                text-decoration: none;
                 padding-bottom: $base-spacing / 2;
             }
         }
