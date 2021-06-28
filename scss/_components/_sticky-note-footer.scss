@@ -12,8 +12,11 @@
         left: 0;
         right: 0;
 
-        p, a {
-            display: inline;
+        p {
+            display: block;
+        }
+        p,
+        a {
             font-size: 14px;
             font-style: italic;
         }
