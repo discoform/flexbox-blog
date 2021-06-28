@@ -953,13 +953,13 @@ keyframes
   }
 }
 
-main[role=main] {
+main[role="main"] {
   max-width: 1600px;
   margin: 30px 15px;
 }
 
 @media (min-width: 800px) {
-  main[role=main] {
+  main[role="main"] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -968,39 +968,42 @@ main[role=main] {
 }
 
 @media (min-width: 500px) {
-  main[role=main] article, main[role=main] aside {
+  main[role="main"] article,
+  main[role="main"] aside {
     margin: 15px;
   }
 }
 
 @media (min-width: 800px) {
-  main[role=main] article, main[role=main] aside {
+  main[role="main"] article,
+  main[role="main"] aside {
     margin: 30px;
     padding: 15px;
   }
 }
 
 @media (min-width: 1200px) {
-  main[role=main] article, main[role=main] aside {
+  main[role="main"] article,
+  main[role="main"] aside {
     margin: 30px;
   }
 }
 
-main[role=main] section.the-content {
+main[role="main"] section.the-content {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
 }
 
 @media (min-width: 800px) {
-  main[role=main] section.the-content {
+  main[role="main"] section.the-content {
     border-left: 1px solid #dfdfdf;
     border-right: 1px solid #dfdfdf;
   }
 }
 
 @media (min-width: 500px) {
-  main[role=main] section.the-content {
+  main[role="main"] section.the-content {
     -webkit-box-flex: 4;
         -ms-flex: 4;
             flex: 4;
@@ -1008,7 +1011,7 @@ main[role=main] section.the-content {
 }
 
 @media (min-width: 800px) {
-  main[role=main] section.the-content {
+  main[role="main"] section.the-content {
     -webkit-box-flex: 5;
         -ms-flex: 5;
             flex: 5;
@@ -1016,43 +1019,46 @@ main[role=main] section.the-content {
 }
 
 @media (min-width: 1200px) {
-  main[role=main] section.the-content {
+  main[role="main"] section.the-content {
     -webkit-box-flex: 2;
         -ms-flex: 2;
             flex: 2;
   }
 }
 
-main[role=main] section.the-content article {
+main[role="main"] section.the-content article {
   padding-bottom: 60px;
   position: relative;
 }
 
-main[role=main] section.the-content article:nth-child(n+2) {
+main[role="main"] section.the-content article:nth-child(n + 2) {
   padding-top: 60px;
   border-top: 1px solid #dfdfdf;
 }
 
-main[role=main] section.the-content article h3, main[role=main] section.the-content article p {
+main[role="main"] section.the-content article h3,
+main[role="main"] section.the-content article p {
   margin: 15px 0;
 }
 
 @media (min-width: 800px) {
-  main[role=main] section.the-content article h3, main[role=main] section.the-content article p {
+  main[role="main"] section.the-content article h3,
+  main[role="main"] section.the-content article p {
     margin: 30px 0;
   }
 }
 
-main[role=main] section.the-content article h1, main[role=main] section.the-content article h3 {
+main[role="main"] section.the-content article h1,
+main[role="main"] section.the-content article h3 {
   margin: 0;
   padding: 0;
 }
 
-main[role=main] section.the-content article h1 {
+main[role="main"] section.the-content article h1 {
   margin-left: -3px;
 }
 
-main[role=main] section.the-content article h1.rotate {
+main[role="main"] section.the-content article h1.rotate {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   margin-top: 60px;
@@ -1060,100 +1066,85 @@ main[role=main] section.the-content article h1.rotate {
   padding-bottom: 0;
 }
 
-main[role=main] section.the-content article h3.rotate {
+main[role="main"] section.the-content article h3.rotate {
   margin-top: 0;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-main[role=main] section.the-content article h3.date-published {
+main[role="main"] section.the-content article h3.date-published {
   margin: 30px 0;
   padding: 0;
 }
 
-main[role=main] section.the-content article h3.date-published span {
+main[role="main"] section.the-content article h3.date-published span {
   margin: 0;
   padding: 0;
 }
 
-main[role=main] section.the-content article h3.date-published span.day {
+main[role="main"] section.the-content article h3.date-published span.day {
   font-size: 20px;
   margin-top: 4px;
 }
 
-main[role=main] section.the-content article .author {
+main[role="main"] section.the-content article .author {
   font-size: 72%;
   font-weight: 700;
 }
 
-main[role=main] section.the-content article figure {
+main[role="main"] section.the-content article figure {
   padding: 30px 0 15px 0;
 }
 
 @media (min-width: 500px) {
-  main[role=main] section.the-content article figure {
+  main[role="main"] section.the-content article figure {
     padding: 60px 0;
   }
 }
 
-main[role=main] section.the-content article img {
+main[role="main"] section.the-content article img {
   width: calc(100%);
   height: auto;
   padding: 0;
   margin: 0;
 }
 
-main[role=main] section.the-content article figcaption {
+main[role="main"] section.the-content article figcaption {
   font-size: 10px;
   text-align: right;
-  opacity: .3;
+  opacity: 0.3;
   text-decoration: underline;
   padding-bottom: 15px;
 }
 
-main[role=main] section.the-content .load-more-posts {
+main[role="main"] section.the-content .load-more-posts {
   text-align: center;
-  padding: 60px 30px;
   display: block;
   margin: 60px auto;
-  border-bottom: 0;
-  max-width: 90%;
 }
 
-@media (min-width: 500px) {
-  main[role=main] section.the-content .load-more-posts {
-    padding: 30px;
-  }
-}
-
-@media (min-width: 800px) {
-  main[role=main] section.the-content .load-more-posts {
-    max-width: 50%;
-  }
-}
-
-main[role=main] #left {
+main[role="main"] #left {
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
           order: 0;
 }
 
 @media (min-width: 500px) {
-  main[role=main] #left {
+  main[role="main"] #left {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
   }
 }
 
-main[role=main] #right {
+main[role="main"] #right {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
 }
 
 @media (min-width: 500px) {
-  main[role=main] #right {
+  main[role="main"] #right {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -1164,22 +1155,29 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 100%;
   border-bottom: 1px solid #dfdfdf;
 }
 
 header .the-content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin: auto;
+  margin: auto auto auto 0;
   padding: 15px;
+  max-width: 80%;
+}
+
+header .the-content h1 {
+  font-size: 30px;
+  margin: 0;
 }
 
 @media (min-width: 500px) {
   header .the-content {
+    margin: auto;
     text-align: center;
     margin-top: 15px;
+  }
+  header .the-content h1 {
+    font-size: 4.242rem;
+    margin: 1.5rem auto;
   }
 }
 
