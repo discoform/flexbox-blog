@@ -1,29 +1,18 @@
 footer {
-    p,a{
-    font-size:inherit;
-    }
-
-    @include max-width-flex;
-
     margin-top: $base-spacing * 2;
-
     @include breakpoint(medium) {
         margin: ($base-spacing * 4) auto;
     }
-
-
-    
     section {
         flex: 1;
         text-align: center;
-
-        ul {
-            li {
-                display: inline-block;
-                margin: 0 ($base-spacing / 2);
-
-                a {
-                    color: inherit;
+        ul li {
+            display: inline-block;
+            margin: 0 ($base-spacing / 2);
+            a {
+                color: inherit;
+                svg {
+                    fill: currentColor;
                 }
             }
         }

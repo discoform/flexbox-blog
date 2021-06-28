@@ -6,12 +6,10 @@
 
     @include breakpoint(medium) {
         position: fixed;
-        bottom: 0;
         box-shadow: 0px 0px 2px $grey;
         width: 100%;
         left: 0;
-        right: 0;
-
+        bottom: 0;
         p {
             display: block;
         }
