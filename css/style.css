@@ -1110,10 +1110,10 @@ main[role="main"] section.the-content article img {
 }
 
 main[role="main"] section.the-content article figcaption {
-  font-size: 10px;
+  font-size: 12px;
   text-align: right;
-  opacity: 0.3;
-  text-decoration: underline;
+  margin-top: 7.5px;
+  text-decoration: none;
   padding-bottom: 15px;
 }
 
