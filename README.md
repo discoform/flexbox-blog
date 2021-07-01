@@ -13,14 +13,14 @@ After seeing these scores I spent a Sunday afternoon making improvements whereve
 ## Updated Lighthouse scores
 ![after the fix](./read-me-assets/after.png)
 
-To get this project up to speed I did the following:
+To get this project up to speed (ahem) I did the following:
 
 - re-linked some missing resources
 - removed Font Awesome and replaced those icons with .svgs
-- Removed the Google Fonts
+- Removed Google Fonts and replaced with system fonts
 - Replaced SoundCloud embeds with YouTube Embeds and a facade
-- Addressed the some accessibility issues (contrast, heading order, etc.)
-- Fixed some small markup issues.
+- Addressed some accessibility issues (contrast, heading order, etc.)
+- Fixed some small markup issues
 
 
 The project could still use some adjustments to make it truly template ready. I don't love that it uses jQuery for the dropdown menus, and the stylesheet can definitely be greatly reduced in size.
